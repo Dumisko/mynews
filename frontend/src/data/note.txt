@@ -1,0 +1,8 @@
+1. headline
+2. writer 
+3. date and time
+4. image 
+5. content
+6. content type( ex: sports, geopolitics etc)
+
+
