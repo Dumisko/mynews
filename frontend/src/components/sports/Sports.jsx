@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import SportsCard from './SportsCard.jsx'
 import axios from 'axios'
 
+
 function Sports() {
   const [sportsnews, setsportsnews] = useState([]);
   useEffect(()=>{

@@ -8,15 +8,19 @@ import Sports from './components/sports/Sports'
 import World from './components/world/World'
 import Science from './components/science/Science'
 import Footer from "./components/footer/Footer"
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SportsCard from './components/sports/SportsCard'
 
 function App() {
+
 
 
   return (
     <>
    <Navbar />
    <Home />
-   <Sports />
+    <Sports />
+   
      <World />
     <Science />
     <Footer />
