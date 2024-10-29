@@ -8,8 +8,9 @@ import Sports from './components/sports/Sports'
 import World from './components/world/World'
 import Science from './components/science/Science'
 import Footer from "./components/footer/Footer"
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SportsCard from './components/sports/SportsCard'
+// import SportsCard from './components/sports/SportsCard'
+import Education from "./components/education/Education"
+import Jobs from './components/jobs/Jobs'
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
     <Sports />
    
      <World />
+     <Jobs />
+     <Education />
     <Science />
     <Footer />
   
