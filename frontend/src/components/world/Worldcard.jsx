@@ -1,6 +1,7 @@
 import React from 'react'
 import { getimageUrl } from '../../utils'
-// import styles from "../world/World.css"
+
+// import styles from "./Worldcard.module.css"
 
 
 function Worldcard({worlds: {headline,writer, date,image, content},}) {

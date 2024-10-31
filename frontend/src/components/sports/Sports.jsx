@@ -3,8 +3,25 @@ import { useState, useEffect } from 'react';
 import SportsCard from './SportsCard.jsx'
 import axios from 'axios'
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function Sports() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 4000,
+    cssEase: "linear"
+  };
+
+
+
   const [sportsnews, setsportsnews] = useState([]);
   useEffect(()=>{
 const getsportsnews = async ()=>{
@@ -25,14 +42,17 @@ getsportsnews();
   return (
     <section id='sports'>
     <h1>sports section </h1>
-      <div >
+
+
+
+      <Slider {...settings}>
       {
         sportsnews.map((sport,id)=>{
           return (<SportsCard key={id} sport={sport} />);
         })
 
       }
-      </div>
+      </Slider>
       
     </section>
   )

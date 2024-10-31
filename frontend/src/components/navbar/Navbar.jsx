@@ -31,7 +31,6 @@ function Navbar() {
                 <li><a href="#education" className={styles.navlink}>Education</a></li>
                 <li><a href="#jobs" className={styles.navlink}>Jobs</a></li>
 
-                {/*  <li><img src=''/></li> */ }
 
 
             </ul>
