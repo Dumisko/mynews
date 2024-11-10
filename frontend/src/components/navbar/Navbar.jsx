@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
 
-        <a href='/logo' className={styles.logo}>logo</a>
+        <Link to='/logo' className={styles.logo}>logo</Link>
         <div className={styles.menu}>
 
         <img src={ menuopen ? closeimage : menuimage} alt="menu-button" className={styles.menuBtn} 
@@ -24,14 +24,12 @@ function Navbar() {
 
             <ul className={`${styles.menuitems} ${menuopen && styles.menuopen}`}
     onClick={()=>setmenuopen(false)}>
-                <li><a href="#home"  className={styles.navlink}>Home</a></li>
-                <li><a href="#sports" className={styles.navlink}>Sports</a></li>
-                <li><a href="#world" className={styles.navlink}>World</a></li>
-                <li><a href="#science" className={styles.navlink}>Science</a></li>
-                <li><a href="#education" className={styles.navlink}>Education</a></li>
-                <li><a href="#jobs" className={styles.navlink}>Jobs</a></li>
-
-
+                <li><Link to="/"  className={styles.navlink}>Home</Link></li>
+                <li><Link to="/sports" className={styles.navlink}>Sports</Link></li>
+                <li><Link to="/world" className={styles.navlink}>World</Link></li>
+                <li><Link to="/science" className={styles.navlink}>Science</Link></li>
+                <li><Link to="/education" className={styles.navlink}>Education</Link></li>
+                <li><Link to="/jobs" className={styles.navlink}>Jobs</Link></li>
 
             </ul>
         </div>

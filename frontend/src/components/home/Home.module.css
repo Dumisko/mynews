@@ -1,0 +1,11 @@
+/* Add this CSS to the main content or body to prevent it from being hidden behind the navbar */
+.bodyst {
+    margin: 0;
+    padding-top: 80px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  /* Alternatively, if you are using a wrapper/div around your content */
+  .content {
+    padding-top: 80px; /* Make sure this value matches your navbar height */
+  }
+  
